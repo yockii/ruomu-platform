@@ -1,8 +1,7 @@
 import {RouteRecordRaw} from "vue-router";
 import {Home32Filled, Home32Regular} from "@vicons/fluent"
 
-const routes: Array<RouteRecordRaw> = [
-    {
+const route:RouteRecordRaw = {
         path: '',
         name: 'Home',
         alias: ['/home'],
@@ -14,6 +13,5 @@ const routes: Array<RouteRecordRaw> = [
             activeIcon: Home32Filled,
         }
     }
-]
 
-export default routes
+export default route

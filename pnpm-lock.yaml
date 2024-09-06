@@ -24,6 +24,9 @@ importers:
       '@ruomu-ui/designer':
         specifier: ^1.0.2
         version: 1.0.2(pinia@2.2.2(typescript@5.5.4)(vue@3.5.1(typescript@5.5.4)))(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.4)(less@4.2.0))
+      '@ruomu-ui/toolbar-logo':
+        specifier: ^2.0.0
+        version: 2.0.0(pinia@2.2.2(typescript@5.5.4)(vue@3.5.1(typescript@5.5.4)))(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.4)(less@4.2.0))
       '@ruomu-ui/types':
         specifier: ^1.0.0
         version: 1.0.0
@@ -39,6 +42,9 @@ importers:
       '@vue/tsconfig':
         specifier: ^0.5.1
         version: 0.5.1
+      animate.css:
+        specifier: ^4.1.1
+        version: 4.1.1
       axios:
         specifier: ^1.7.7
         version: 1.7.7
@@ -897,6 +903,9 @@ packages:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  animate.css@4.1.1:
+    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -2744,6 +2753,8 @@ snapshots:
   '@vue/tsconfig@0.5.1': {}
 
   acorn@8.12.1: {}
+
+  animate.css@4.1.1: {}
 
   ansi-styles@3.2.1:
     dependencies:

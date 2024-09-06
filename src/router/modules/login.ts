@@ -1,15 +1,14 @@
 import {RouteRecordRaw} from "vue-router";
 
-const routes: Array<RouteRecordRaw> = [
-    {
+const route:RouteRecordRaw = {
         path: '/login',
         name: 'Login',
         component: () => import('@/views/login/index.vue'),
         meta: {
             title: '登录',
-            customLayout: true
+            customLayout: true,
+            menuHide: true
         }
     }
-]
 
-export default routes
+export default route

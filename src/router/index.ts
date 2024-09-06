@@ -40,6 +40,12 @@ const router = createRouter({
 });
 
 router.beforeEach((_to, _from, next) => {
+    // 防止重复跳转
+    if (_to.path === _from.path) {
+        next(false);
+        return
+    }
+
     loadingBar.start();
     const userStore = useUserStore()
     if (!userStore.isLogin && _to.path !== '/login') {
