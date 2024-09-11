@@ -40,8 +40,8 @@ const router = createRouter({
 });
 
 router.beforeEach((_to, _from, next) => {
-    // 防止重复跳转
-    if (_to.path === _from.path) {
+    // 防止重复跳转, query/params也要判断
+    if (_to.path === _from.path && _to.query === _from.query && _to.params === _from.params) {
         next(false);
         return
     }

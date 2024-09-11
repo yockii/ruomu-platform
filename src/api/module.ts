@@ -14,5 +14,8 @@ export const ModuleApi = {
     },
     updateStatus: (data: Module): Promise<Response<Boolean>> => {
         return Post('/module/updateStatus', data)
+    },
+    dependencies: (moduleCode: string): Promise<Response<Array<string>>> => {
+        return Get('/module/dependencies', {moduleCode})
     }
 }

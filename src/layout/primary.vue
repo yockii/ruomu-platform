@@ -1,13 +1,20 @@
 <script setup lang="ts">
 import {NLayout, NLayoutSider, NLayoutHeader, NLayoutContent} from 'naive-ui'
 import LogoComponent from '@ruomu-ui/toolbar-logo'
-import {computed, ref} from "vue";
+import {computed, onMounted, ref} from "vue";
 import { resolveComponent } from '@ruomu-ui/core'
 import SideMenuList from "./components/SideMenuList.vue";
 import HeaderBar from "./components/HeaderBar.vue";
+import {useAppStore} from "@/store/app.ts";
 
 const Logo = computed(() => resolveComponent(LogoComponent.component) )
 const sidebarLeftCollapsed = ref(false)
+
+const appStore = useAppStore()
+
+onMounted(() => {
+  appStore.loadModules()
+})
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { darkTheme, zhCN, dateZhCN, NConfigProvider, NLoadingBarProvider, NDialogProvider, NNotificationProvider, NMessageProvider } from "naive-ui"
+import { darkTheme, zhCN, dateZhCN } from "naive-ui"
 import {computed} from "vue";
 import {useAppStore} from "@/store/app.ts";
 

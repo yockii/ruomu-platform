@@ -6,6 +6,10 @@ export type Module = PaginateCondition & {
     code?: string;
     cmd?: string;
     status?: number;
+
+    dependencies?: Array<ModuleDependency>;
+    injects?: Array<ModuleInjectInfo>;
+    settings?: Array<ModuleSettings>;
 }
 
 export type ModuleDependency = {
